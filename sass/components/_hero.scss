@@ -1,0 +1,49 @@
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  text-align: center;
+  max-width: 1600px;
+  background-color: $bgd-dark;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/bgi-main.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $title-text-color;
+
+  width: 604px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.hero__btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  cursor: pointer;
+  color: $title-text-color;
+  background-color: $accent-color;
+
+  display: inline-block;
+  min-width: 73px;
+  padding: 8px 30px;
+  border: 1px solid $accent-color;
+  margin-left: auto;
+  margin-right: auto;
+}

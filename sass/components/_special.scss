@@ -1,0 +1,37 @@
+.special {
+  display: flex;
+}
+
+.special__item {
+  flex-basis: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.special__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  height: 120px;
+  background-color: $bgd-secondary;
+  margin-bottom: 30px;
+}
+
+.special__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  margin-bottom: 10px;
+}
+
+.special__descr {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
