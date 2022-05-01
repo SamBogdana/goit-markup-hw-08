@@ -601,8 +601,13 @@ textarea {
 }
 
 .clients {
-  display: flex;
   padding: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .clients {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -611,7 +616,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__item {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -631,7 +636,13 @@ textarea {
     margin-right: 30px;
   }
   .clients__item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .clients__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
