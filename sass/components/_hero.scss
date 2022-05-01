@@ -1,20 +1,70 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   text-align: center;
   max-width: 1600px;
   background-color: $bgd-dark;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 118px;
+  padding-top: 118px;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/bgi-main.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url("../images/bg-main/bg-main_s.jpg");
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/bg-main/bg-main_s@2x.jpg");
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-main/bg-main_m.jpg");
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/bg-main/bg-main_m@2x.jpg");
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-main/bg-main_l.jpg");
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/bg-main/bg-main_l@2x.jpg");
+    }
+  }
 }
 
 .hero__title {
@@ -30,7 +80,7 @@
   margin-right: auto;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 4800px) {
+  @media screen and (min-width: 480px) {
     width: 360px;
   }
 

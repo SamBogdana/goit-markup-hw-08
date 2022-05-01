@@ -17,28 +17,32 @@
 
 .logo {
   font-family: $secondary-font;
-  font-size: 26px;
   font-weight: 700;
-  line-height: 1.19;
   letter-spacing: 0.03em;
+  line-height: 1.17;
+  font-size: 24px;
   color: $accent-color;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.19;
+    font-size: 26px;
+  }
 }
 
 .nav__logo {
-  margin-right: 93px;
   display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-  @media screen and (min-width: 480px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
   @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 88px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 93px;
   }
 }
 
@@ -75,6 +79,10 @@
 
   // адаптивка
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -100,22 +108,46 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  display: flex;
   align-items: center;
   // адаптивка
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__item > .contacts__link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    // лише планшет
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .contacts__link:focus,
@@ -126,4 +158,18 @@
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.contacts__icon--smartphone {
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.contacts__icon--envelope {
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
 }

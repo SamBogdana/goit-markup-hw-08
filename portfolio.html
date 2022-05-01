@@ -17,8 +17,13 @@
     <header class="header">
         <div class="container header__container">
             <nav class="nav">
-                <a class="nav__logo logo" href="./index.html">Web<span
-                        class="logo--light">Studio</span></a>
+                <a class="nav__logo logo" href="./index.html">Web<span class="logo--light">Studio</span></a>
+                <button class="mobile-btn" data-menu-button type="button" aria-expanded="false">
+                    <svg class="mobile__icon" height='40px' width='40px'>
+                        <use class="icon-open" href="./images/icons.svg#menu_40px"> </use>
+                        <use class="icon-close" href="./images/icons.svg#close_40px"> </use>
+                    </svg>
+                </button>
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link" href="./index.html">Студия</a>
@@ -70,7 +75,22 @@
                     <li class="catalog__item">
                         <a class="catalog__link" target="_blank" href="">
                             <div class="catalog__thumb">
-                                <img class="catalog__pic" src="./images/portfolio1.jpg" alt="Пример веб-сайта" width="370"/>
+                                <picture>
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio1_l.jpg   1x,
+                                                    ./images/portfolio/portfolio1_l@2x.jpg 2x" 
+                                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio1_m.jpg   1x,
+                                                    ./images/portfolio/portfolio1_m@2x.jpg 2x"
+                                                    media="(min-width: 768px)" type="image/jpeg" />
+                        
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio1_s@2x.jpg 2x" 
+                                                    media="(max-width: 767px)" type="image/jpeg" />
+                                    <img class="catalog__pic" src="./images/portfolio/portfolio1_s.jpg" alt="Пример веб-сайта" width="450" height="294" />
+                                </picture>
                                 <p class="catalog__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить исчерпывающие сведения о&nbsp;компании или частном лице.</p>
                             </div>
@@ -84,7 +104,22 @@
                     <li class="catalog__item">
                         <a class="catalog__link" target="_blank" href="">
                             <div class="catalog__thumb">
-                                <img class="catalog__pic" src="./images/portfolio2.jpg" alt="Два баскетболиста" width="370" />
+                                <picture>
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio2_l.jpg   1x,
+                                                    ./images/portfolio/portfolio2_l@2x.jpg 2x" 
+                                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio2_m.jpg   1x,
+                                                    ./images/portfolio/portfolio2_m@2x.jpg 2x"
+                                                    media="(min-width: 768px)" type="image/jpeg" />
+                        
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio2_s@2x.jpg 2x" 
+                                                    media="(max-width: 767px)" type="image/jpeg" />
+                                    <img class="catalog__pic" src="./images/portfolio/portfolio2_s.jpg" alt="Два баскетболиста" width="450" height="294" />
+                                </picture>                               
                                 <p class="catalog__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.</p>
                             </div>
@@ -97,7 +132,22 @@
                     <li class="catalog__item">
                         <a class="catalog__link" target="_blank" href="">
                             <div class="catalog__thumb">
-                                <img class="catalog__pic" src="./images/portfolio3.jpg" alt="Лототип ресторана" width="370" />
+                                 <picture>
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio3_l.jpg   1x,
+                                                    ./images/portfolio/portfolio3_l@2x.jpg 2x" 
+                                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio3_m.jpg   1x,
+                                                    ./images/portfolio/portfolio3_m@2x.jpg 2x"
+                                                    media="(min-width: 768px)" type="image/jpeg" />
+                        
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio3_s@2x.jpg 2x" 
+                                                    media="(max-width: 767px)" type="image/jpeg" />
+                                    <img class="catalog__pic" src="./images/portfolio/portfolio3_s.jpg" alt="Лототип ресторана" width="450" height="294" />
+                                </picture>                                 
                                 <p class="catalog__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.</p>
                             </div>
@@ -110,7 +160,22 @@
                     <li class="catalog__item">
                         <a class="catalog__link" target="_blank" href="">
                             <div class="catalog__thumb">
-                                <img class="catalog__pic" src="./images/portfolio4.jpg" alt="Наушники" width="370" />
+                                 <picture>
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio4_l.jpg   1x,
+                                                    ./images/portfolio/portfolio4_l@2x.jpg 2x" 
+                                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio4_m.jpg   1x,
+                                                    ./images/portfolio/portfolio4_m@2x.jpg 2x"
+                                                    media="(min-width: 768px)" type="image/jpeg" />
+                        
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio4_s@2x.jpg 2x" 
+                                                    media="(max-width: 767px)" type="image/jpeg" />
+                                    <img class="catalog__pic" src="./images/portfolio/portfolio4_s.jpg" alt="Наушники" width="450" height="294" />
+                                </picture>                                  
                                 <p class="catalog__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.</p>
                             </div>
@@ -123,7 +188,22 @@
                     <li class="catalog__item">
                         <a class="catalog__link" target="_blank" href="">
                             <div class="catalog__thumb">
-                                <img class="catalog__pic" src="./images/portfolio5.jpg" alt="Две коробки" width="370" />
+                                <picture>
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio5_l.jpg   1x,
+                                                    ./images/portfolio/portfolio5_l@2x.jpg 2x" 
+                                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio5_m.jpg   1x,
+                                                    ./images/portfolio/portfolio5_m@2x.jpg 2x"
+                                                    media="(min-width: 768px)" type="image/jpeg" />
+                        
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio5_s@2x.jpg 2x" 
+                                                    media="(max-width: 767px)" type="image/jpeg" />
+                                    <img class="catalog__pic" src="./images/portfolio/portfolio5_s.jpg" alt="Две коробки" width="450" height="294" />
+                                </picture>                                 
                                 <p class="catalog__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                         это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.</p>
                             </div>
@@ -136,7 +216,22 @@
                     <li class="catalog__item">
                         <a class="catalog__link" target="_blank" href="">
                             <div class="catalog__thumb">
-                                <img class="catalog__pic" src="./images/portfolio6.jpg" alt="Пример веб-сайта" width="370" />
+                                <picture>
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio6_l.jpg   1x,
+                                                    ./images/portfolio/portfolio6_l@2x.jpg 2x" 
+                                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio6_m.jpg   1x,
+                                                    ./images/portfolio/portfolio6_m@2x.jpg 2x"
+                                                    media="(min-width: 768px)" type="image/jpeg" />
+                        
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio6_s@2x.jpg 2x" 
+                                                    media="(max-width: 767px)" type="image/jpeg" />
+                                    <img class="catalog__pic" src="./images/portfolio/portfolio6_s.jpg" alt="Пример веб-сайта" width="450" height="294" />
+                                </picture>  
                                 <p class="catalog__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.</p>
                             </div>
@@ -149,7 +244,22 @@
                     <li class="catalog__item">
                         <a class="catalog__link" target="_blank" href="">
                             <div class="catalog__thumb">
-                                <img class="catalog__pic" src="./images/portfolio7.jpg" alt="Разворот книги Limited Edition" width="370" />
+                                <picture>
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio7_l.jpg   1x,
+                                                    ./images/portfolio/portfolio7_l@2x.jpg 2x" 
+                                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio7_m.jpg   1x,
+                                                    ./images/portfolio/portfolio7_m@2x.jpg 2x"
+                                                    media="(min-width: 768px)" type="image/jpeg" />
+                        
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio7_s@2x.jpg 2x" 
+                                                    media="(max-width: 767px)" type="image/jpeg" />
+                                    <img class="catalog__pic" src="./images/portfolio/portfolio7_s.jpg" alt="Разворот книги Limited Edition" width="450" height="294" />
+                                </picture>                                  
                                 <p class="catalog__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.</p>
                             </div>
@@ -162,7 +272,22 @@
                     <li class="catalog__item">
                         <a class="catalog__link" target="_blank" href="">
                             <div class="catalog__thumb">
-                                <img class="catalog__pic" src="./images/portfolio8.jpg" alt="Лого проекту LAB" width="370" />
+                                <picture>
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio8_l.jpg   1x,
+                                                    ./images/portfolio/portfolio8_l@2x.jpg 2x" 
+                                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio8_m.jpg   1x,
+                                                    ./images/portfolio/portfolio8_m@2x.jpg 2x"
+                                                    media="(min-width: 768px)" type="image/jpeg" />
+                        
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio8_s@2x.jpg 2x" 
+                                                    media="(max-width: 767px)" type="image/jpeg" />
+                                    <img class="catalog__pic" src="./images/portfolio/portfolio8_s.jpg" alt="Лого проекту LAB" width="450" height="294" />
+                                </picture>                                  
                                 <p class="catalog__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.</p>
                             </div>
@@ -175,7 +300,22 @@
                     <li class="catalog__item">
                         <a class="catalog__link" target="_blank" href="">
                             <div class="catalog__thumb">
-                                <img class="catalog__pic" src="./images/portfolio9.jpg" alt="Пример приложения о бизнесе" width="370" />
+                                <picture>
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio9_l.jpg   1x,
+                                                    ./images/portfolio/portfolio9_l@2x.jpg 2x" 
+                                                    media="(min-width: 1200px)" type="image/jpeg" />
+                            
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio9_m.jpg   1x,
+                                                    ./images/portfolio/portfolio9_m@2x.jpg 2x"
+                                                    media="(min-width: 768px)" type="image/jpeg" />
+                        
+                                    <source srcset="
+                                                    ./images/portfolio/portfolio9_s@2x.jpg 2x" 
+                                                    media="(max-width: 767px)" type="image/jpeg" />
+                                    <img class="catalog__pic" src="./images/portfolio/portfolio9_s.jpg" alt="Пример приложения о бизнесе" width="450" height="294" />
+                                </picture>                                 
                                 <p class="catalog__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.</p>
                             </div>
@@ -192,57 +332,59 @@
 
     <footer class="footer">
         <div class="container footer__container">
-            <div class="footer__address">
-                <a class="logo footer__logo" href="./index.html">Web<span
-                        class="logo--dark">Studio</span></a>
-                <address class="address">
-                    <ul class="address__list">
-                        <li class="address__item">
-                            <a class="adress__link" href="https://goo.gl/maps/SfVC1ReVJSkuJeHU6" target="_blank"
-                                rel="nofollow noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+            <div class="footer__group">
+                <div class="footer__address">
+                    <a class="logo footer__logo" href="./index.html">Web<span class="logo--dark">Studio</span></a>
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__item">
+                                <a class="adress__link" href="https://goo.gl/maps/SfVC1ReVJSkuJeHU6" target="_blank"
+                                    rel="nofollow noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="address__item">
+                                <a class="contacts__link" href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="address__item">
+                                <a class="contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__social">
+                    <h2 class="footer__title">присоединяйтесь</h2>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <svg class="social__icon" height='20px' width='20px'>
+                                    <use href="./images/icons.svg#instagram"> </use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a class="contacts__link" href="mailto:info@example.com">info@example.com</a>
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <svg class="social__icon" height='20px' width='20px'>
+                                    <use href="./images/icons.svg#twitter"> </use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a class="contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <svg class="social__icon" height='20px' width='20px'>
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <svg class="social__icon" height='20px' width='20px'>
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <div class="footer__social">
-                <h2 class="footer__title">присоединяйтесь</h2>
-                <ul class="social">
-                    <li class="social__item">
-                        <a class="social__link" href="">
-                            <svg class="social__icon" height='20px' width='20px'>
-                                <use href="./images/icons.svg#instagram"> </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="">
-                            <svg class="social__icon" height='20px' width='20px'>
-                                <use href="./images/icons.svg#twitter"> </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="">
-                            <svg class="social__icon" height='20px' width='20px'>
-                                <use href="./images/icons.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="">
-                            <svg class="social__icon" height='20px' width='20px'>
-                                <use href="./images/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    
             <form class="footer__form">
                 <h2 class="footer__title">Подпишитесь на рассылку</h2>
                 <input class="footer__input" type="email" name="mail" id="mail" placeholder="E-mail" />
@@ -254,6 +396,57 @@
             </form>
         </div>
     </footer>
+
+    <!-- Мобільне меню -->
+    <div class="mobile-overlay">
+        <div class="mobile-menu" data-menu>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__list list">
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link link mobile-nav__link--current" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-group">
+                <ul class="mobile-menu__contacts">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/form-btn.js"></script>
 
 </body>
 </html>

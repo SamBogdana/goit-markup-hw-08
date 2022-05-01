@@ -1,7 +1,26 @@
 .portfolio {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  // мобільне меню
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-right: -10px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.portfolio__item {
+  // мобільне меню
+  margin-right: 15px;
+  margin-top: 15px;
 }
 
 .portfolio__item:not(:last-child) {
